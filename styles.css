@@ -210,7 +210,55 @@ ul { list-style: none; }
   padding-top: clamp(72px, 12vh, 160px);
   padding-bottom: clamp(80px, 14vh, 160px);
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(220px, 1fr);
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+@media (max-width: 880px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 64px; }
+}
+
 .hero-eyebrow { margin-bottom: clamp(40px, 6vh, 80px); }
+
+/* Side metadata — magazine masthead */
+.hero-meta {
+  padding-top: 4px;
+  border-top: 1px solid var(--rule);
+}
+.meta-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.meta-item {
+  padding: 18px 0 18px;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.meta-item:last-child { border-bottom: 0; }
+.meta-item dt {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 0;
+}
+.meta-item dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(15px, 1.25vw, 17px);
+  line-height: 1.4;
+  color: var(--ink-2);
+  letter-spacing: -0.005em;
+}
 
 .hero-headline {
   font-family: var(--serif);
