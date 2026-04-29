@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Column House</title>
+  <meta name="description" content="Send your website. We'll show what could be clearer. A focused review for wellness clinics and health brands that want a clearer, more credible website." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23F5F4F1'/><text x='16' y='22' font-family='Georgia,serif' font-size='18' text-anchor='middle' fill='%231A1A1A'>C</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body id="top">
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="wordmark" href="./index.html" aria-label="Column House — home">
+        Column&nbsp;House
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="contact-page">
+    <div class="container">
+      <p class="eyebrow contact-eyebrow reveal">Contact</p>
+
+      <div class="contact-grid">
+
+        <div class="reveal">
+          <h1 class="contact-headline">
+            Send your website.<br />
+            We'll show you what's <em>possible</em>.
+          </h1>
+          <p class="contact-sub">
+            A focused review for longevity clinics, medspas, and modern wellness practices that want a clearer, more credible website.
+          </p>
+        </div>
+
+        <form class="contact-form reveal" onsubmit="event.preventDefault(); var b=this.querySelector('button'); b.textContent='Sent — we\'ll be in touch'; b.setAttribute('disabled','');">
+          <label class="field">
+            <span class="k">Name</span>
+            <input type="text" placeholder="Your name" required>
+          </label>
+          <label class="field">
+            <span class="k">Email</span>
+            <input type="email" placeholder="you@clinic.com" required>
+          </label>
+          <label class="field">
+            <span class="k">Website URL</span>
+            <input type="url" placeholder="https://" required>
+          </label>
+          <label class="field">
+            <span class="k">Brief</span>
+            <textarea placeholder="What is the homepage trying to do, and where is it falling short?"></textarea>
+          </label>
+
+          <button type="submit" class="btn-primary contact-submit">Send <span class="arrow">→</span></button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span class="name">Column&nbsp;House</span>
+      <span class="meta">A design studio · 2026</span>
+      <a class="up" href="#top">Back to top <span class="ar">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="./reveal.js"></script>
+</body>
+</html>
